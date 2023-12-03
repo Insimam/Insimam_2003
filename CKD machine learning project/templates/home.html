@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>CKD prevention system</title>
+
+    <style type="text/css">
+        
+
+        body{
+            background-image: url("C:\\Users\\HP\\Desktop\\PCP New\\templates\\image\\front.jpg");
+            img position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            }        
+
+        input{
+            border-radius: 10px;
+            border: none;
+            padding: 5px;
+            text-align: center;
+            background-color: #395886;
+            color: white;
+
+        }
+        ::placeholder{
+            color: white;
+        }
+
+    </style>
+</head>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> CKD Prevention System </h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+           <b>   <input type="text", name='a', placeholder="AGE"> <br><br>
+             <input type="text", name='b', placeholder="Red Blood Cells"> <br><br>
+             <input type="text", name='c', placeholder="Blood Glucose Regulator"> <br><br>
+             <input type="text", name='d', placeholder="Serum Creatinine"> <br><br>
+             <input type="text", name='e', placeholder="Hemoglobin"> <br><br>
+            <input type="text", name='f', placeholder="RC"> <br><br>
+            <input type="text", name='g', placeholder="Coronary Heart Disease"> <br><br><br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        
+        
+    </center>
+
+    </body>
+</html>
