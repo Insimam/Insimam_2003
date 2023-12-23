@@ -1,0 +1,10 @@
+First install (pip install pywhatkit) .
+If these don't work try pip3 install pywhatkit.
+
+
+import pywhatkit
+pywhatkit.sendwhatmsg('+country code number','your message',(hours),(minutes))
+
+Example:
+	import pywhatkit
+	pywhatkit.sendwhatmsg('+94xxxxxxxxx','Hi Insimam',12,15)
